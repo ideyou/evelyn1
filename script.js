@@ -1,6 +1,7 @@
 function toggleTheme() {
   document.body.classList.toggle("dark-mode");
 }
+
 particlesJS("particles-js", {
   particles: {
     number: {
@@ -33,3 +34,47 @@ particlesJS("particles-js", {
     }
   }
 });
+
+const music = new Audio("assets/musica.mp3");
+music.volume = 0.05; // começa baixinho
+
+function fadeInAudio() {
+  music.play();
+
+  let volume = 0.05;
+
+  const fade = setInterval(() => {
+    if (volume < 0.4) {   // volume final (ajuste aqui)
+      volume += 0.005;     // velocidade do aumento
+      music.volume = volume;
+    } else {
+      clearInterval(fade);
+    }
+  }, 200);
+}
+
+["click", "keydown", "touchstart", "scroll"].forEach(evt =>
+  document.addEventListener(evt, function startOnce() {
+    fadeInAudio();
+
+    // remove depois de tocar 1 vez
+    ["click", "keydown", "touchstart", "scroll"].forEach(e =>
+      document.removeEventListener(e, startOnce)
+    );
+  })
+);
+// const music = new Audio("assets/musica.mp4");
+// music.volume = 1;
+
+// function enableAudio() {
+//   music.play();
+
+//   ["click", "keydown", "touchstart", "scroll"].forEach(evt =>
+//     document.removeEventListener(evt, enableAudio)
+//   );
+// }
+
+// ["click", "keydown", "touchstart", "scroll"].forEach(evt =>
+//   document.addEventListener(evt, enableAudio)
+// );
+

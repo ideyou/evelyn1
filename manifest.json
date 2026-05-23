@@ -1,0 +1,19 @@
+{
+  "id": "EVELYNBOOKS",
+  "name": "Biblioteca da Evelyn",
+  "short_name": "Biblioteca da Evelyn",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#2e0c48",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "app_name": "Biblioteca da Evelyn",
+  "description": "Espaço íntimista para leitores apaixonados por fantasia, romance sombrio e estética vintage/gótica."
+}
