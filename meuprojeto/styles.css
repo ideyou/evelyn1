@@ -1,0 +1,375 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #000000;
+  color: #dad5d5;
+  font-family: 'Cinzel', serif;
+
+}
+
+/* Container estilo Bootstrap */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0 0.45);
+  box-shadow:
+    0 0 40px rgba(95, 1, 95, 0.322);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Centralização */
+.text-center {
+  text-align: center;
+}
+
+/* Avatar */
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Títulos */
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cbbdbd77;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Botões estilo Bootstrap */
+.btn {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Variantes */
+.btn-primary {
+  background-color: #4f0b52;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #39065f;
+  color: white;
+}
+
+.btn-dark {
+  background-color: #1c1e21;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid #261021;
+  background: transparent;
+  color: white
+}
+
+/* Hover */
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: 0.3s;
+  box-shadow: 0 0 15px #7a1b7e;
+}
+
+/* Tema escuro */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .btn-outline {
+  color: #ffffff;
+  border-color: #f1f1f1;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.dragon-container {
+
+  position: fixed;
+
+  left: 35%;
+  top: 80%;
+
+  transform: translate(-50%, -50%);
+
+  width: 900px;
+  height: 900px;
+
+  opacity: 0.15;
+
+  filter: brightness(2);
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  animation: floatDragon 6s ease-in-out infinite;
+
+}
+
+.dragao {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px #807380);
+}
+
+/* nevoa */
+.fog {
+
+position:fixed;
+
+inset:-10%;
+
+background:
+url('./assets/nevoa.webp');
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+opacity:.12;
+
+filter:
+blur(15px)
+brightness(.7);
+
+pointer-events:none;
+
+z-index:1;
+
+animation:
+fogFloat
+35s
+ease-in-out
+infinite
+alternate;
+
+}
+
+@keyframes fogFloat {
+
+0% {
+
+transform:
+translateX(-20px)
+translateY(-8px)
+scale(1);
+
+}
+
+100% {
+
+transform:
+translateX(20px)
+translateY(8px)
+scale(1.05);
+
+}
+
+}
+
+.linktree-container {
+  position: relative;
+  z-index: 5;
+}
+
+.dragon-container {
+   position: fixed;
+
+  left: 35%;
+  top: 80%;
+
+  width: 900px;
+  height: 900px;
+
+  opacity: 0.15;
+
+  filter: brightness(2);
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  animation: floatDragon 6s ease-in-out infinite;
+}
+
+.quote {
+  margin-top: 22px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+
+  letter-spacing: 1.5px;
+  font-style: italic;
+
+  text-align: center;
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+
+  .dragon-container {
+    width: 350px;
+    height: 350px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+  }
+
+  .quote {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .container {
+    width: 70%;
+  }
+
+}
+
+.link-btn {
+  cursor: url('./assets/pena_cursor_transparente.png') 2 2, pointer;
+}
+
+body,
+button,
+a {
+  cursor: url('./assets/pena_cursor_transparente.png') 2 2, auto !important;
+}
+
+#frase-magica {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: #d6c2ff;
+  text-align: center;
+  margin-top: 20px;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  text-shadow: 0 0 10px rgba(180, 120, 255, 0.4);
+
+  letter-spacing: 1px;
+}
+
+.fog2{
+
+opacity:.08;
+
+filter:
+blur(30px)
+brightness(.6);
+
+animation-duration:55s;
+
+transform:scale(1.15);
+
+}
+
+@keyframes floatDragon {
+
+0%{
+
+transform:
+translate(-50%,-50%);
+
+}
+
+50%{
+
+transform:
+translate(-50%,-53%);
+
+}
+
+100%{
+
+transform:
+translate(-50%,-50%);
+
+}
+
+}

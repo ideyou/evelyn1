@@ -1,0 +1,74 @@
+teste
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+    
+        background: silver
+    }
+
+    /* CSS para estilizar os elementos */
+   h2 {
+        color: blue;
+    }
+
+    p{ 
+        color: #c02b2b;
+    }
+
+    /* classe para estilizar os links */
+    .azul {
+        color: blue;
+    }
+    </style> 
+    
+
+</head>
+
+<body>
+    <!--TITULOS DE H1 ATÉ H6-->
+    <h1 style="background: yellow;"Que legal</h1>
+    <h2>Que legal</h2>
+    <h3 class="azul">Que legal</h3>
+    <h4>Que legal</h4>
+    <h5>Que legal</h5>
+    <h6>Que legal</h6>
+
+    <!-- PARAGRAFOS-->
+    <p class="azul">Este é um parágrafo.</p>
+    <p>Este é outro parágrafo.</p>
+
+    <!--links-->
+    <a href="pagina2.html">Visite a outra página</a>
+
+    
+    <br><br> <!--quebra de linha/ espaçamento no site--> 
+
+    <!--IMAGENS; OBS: NÃO TEM TAG DE FECHAMENTO-->
+    <img src="imagemteste.avif" alt="Descrição da imagem">
+
+    <!--FORMULÁRIOS-->
+    <form>
+        <input type="text" placeholder="Digite seu nome">
+        <input type="email" placeholder="Digite seu email">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button id="bnt" onclick="trocarCor('lightblue')">Cor de Fundo</button>
+    <script src="js/script.js"></script>
+
+    <script>
+        alert("Olá, seja bem-vindo ao meu site!");
+
+        document.getElementById('bnt').onclick = () => {
+            document.body.style.backgroundColor = "lightblue";
+            
+        };
+    </script>
+</body>
+</html>

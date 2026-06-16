@@ -1,0 +1,64 @@
+
+/* Tirar a margem padrão da página */
+html, body, reset {
+    margin: 0;
+    padding: 0;
+   
+}
+
+html, body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-navegacao {
+    padding: 10px;
+    background-color: #000000;
+}
+
+h1 {
+    background-color: #db97975d;
+    margin: 0;
+    padding: 20px;
+    color: rgb(94, 10, 4);
+}
+
+.texto-direita {
+    text-align: right;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+/* formatação do botão { */
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    padding: 5px 25px;
+    color: black;
+}
+
+/* caixa envelope para aplicar regras */
+.wrapper {
+    display: flex;
+}
+
+.meia-caixa{
+    height: 250px;
+    color: white;
+    width: 40%;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.caixa-completa{
+    height: 500px;
+    color: white;
+    width: 100%;
+    background-color: #09c522;
+    padding: 10px;
+}
+
+

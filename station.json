@@ -1,0 +1,12 @@
+{
+  "color": "#ffff",
+  "background_color": "#2e0c48",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "name": "Evelyn Kele"
+}
