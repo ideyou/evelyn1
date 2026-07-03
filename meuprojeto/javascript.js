@@ -82,7 +82,8 @@ const N = 40;
 const elems = [];
 for (let i = 0; i < N; i++) elems[i] = { use: null, x: width / 2, y: 0 };
 const pointer = { x: width / 2, y: height / 2 };
-const radm = Math.min(pointer.x, pointer.y) - 20;
+// const radm = Math.min(pointer.x, pointer.y) - 20;
+
 let frm = Math.random();
 let rad = 0;
 

@@ -1,12 +1,12 @@
 {
-  "color": "#ffff",
-  "background_color": "#2e0c48",
-  "icons": [
+    "color": "#fff",
+    "background-color": "rgb(99, 18, 126)",
+    "icons": [
     {
-      "src": "profile.avif",
-      "sizes": "any",
-      "type": "image/avif"
+        "src": "profile.png",
+        "sizes": "any",
+        "type": "image/png"
     }
   ],
-  "name": "Evelyn Kele"
+  "name": "Evelyn Marques"
 }
